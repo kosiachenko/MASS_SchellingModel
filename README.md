@@ -136,3 +136,22 @@ moves on each turn to see how system moves to a stable position with time. The
 script is called _“LogParcer.py”_ and can be found in the folder _“ExecutionOutput”_.
 Below are the examples of the graphic output for different threshold values:
 
+### Simulation size 40x40, threshold 50%:
+
+<img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/3_figure_1.png" alt="Agents moved per turn" height="420" width="420"> 
+
+In this case the system reached a *__stable state__* at step 27 (all agents were satisfied with their
+place and didn’t move after that). We can also clearly see *__clusterisation__* of green
+and black cells close to each other in the end state of the system (below on the right).
+
+<img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/3_figure_2.png" alt="State at turn 0" height="420" width="420"> <img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/3_figure_3.png" alt="State at turn 100" height="420" width="420">
+
+### Simulation size 40x40, threshold 30%:
+
+<img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/5_figure_1.png" alt="Agents moved per turn" height="420" width="420">
+
+Even though I decreased the *__threshold to 30%__* (i.e. agents are satisfied even when < 1/3 of their
+neighbors are like them), we can still see the *__clusters__* of green and black cells (although
+smaller than before). The system reached a *__stable state__* at turn 25 in this case.
+
+<img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/5_figure_2.png" alt="State at turn 0" height="420" width="420"> <img src="https://github.com/kosiachenko/MASS_SchellingModel/blob/master/PicturesForREADME/5_figure_3.png" alt="State at turn 100" height="420" width="420">
